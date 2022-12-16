@@ -48,6 +48,12 @@ img:hover{
   }
 
 #modifylist{
-background: linear-gradient(90deg,RED,black 70%);
+    background: linear-gradient(90deg,RED,black 70%);
     color: white;
   }
+
+#addBtn{
+    display: block;
+    margin: auto;
+}
+
