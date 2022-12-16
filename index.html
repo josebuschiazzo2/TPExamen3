@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es un proyecto de JB">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+    <title>3er Examen -> José Buschiazzo</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="57">
+  <!-- Header -->
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/home/jose/Escritorio/CursoFrontend/TP_bootstrap/Imagen/logojb.png" alt="JB logo">
+      José Buschiazzo
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#list">Listado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modifylist">Modificar Persona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header -->
+ 
+  <!-- main -->
+  <main id="main">
+    <section id="list">
+        <H2> </H2>
+        <h2> Listado de Personal</h2>
+        <H2> </H2>
+
+        <div class="Employers">
+
+            <table id="table" class="table table-striped table-hover">
+                <tr> 
+                 <th scope="col">ID</th>
+                 <th scope="col">Nombre Apellido</th>
+                 <th scope="col">Área</th>
+                 <th scope="col">Domicilio</th>
+                 <th scope="col">Foto</th>
+                </tr>
+             </table>
+            
+        </div>
+    </section>
+   </main>
+<!-- end main -->
+  <!-- Modal -->
+<div class="modal fade" id="modalPersona" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Datos de la Persona Seleccionada</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="alert" role="alert">
+
+              <img id="pphoto" src="" alt=""> </img>
+              <h4 id="  "></h4>
+              <h4 id="pname"></h4>
+              <h5 id="parea"></h5>
+              <h5 id="paddress"></h5>
+              
+                     
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btngray" data-dismiss="modal">Volver</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- End Modal -->
+
+<!-- Modifylist -->
+  <section id="modifylist">
+     <div class="container-fluid">
+        <div class="row">
+          <h2>Modificar una Persona</h2>
+          <button type="button" id= "addBtn" class="addBtn btn btn-outline-light">Agregar</button>
+        </div>
+      </div>
+  </section>
+<!-- End Modifylist -->
+
+<!-- Contacto -->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pl-0 pr-0">
+            <img src="/home/jose/Escritorio/CursoFrontend/TP_bootstrap/Imagen/Mapa.png" alt="Ubicación" />
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <h2>JB Electronics</h2>
+            <p>
+              Estamos en Calle: xxxxxxx (Río Grande - Tierra del Fuego)
+            </p>
+            <p>  Cel: 2964-xxxxx
+            </p>
+            <a class="btn btn-outline-light" href="https://www.google.com/maps/place/COSTANERA+FUEGUINA/@-53.7952216,-67.678607,15.75z/data=!4m9!1m2!2m1!1sgoogle+maps!3m5!1s0xbc4b17068e047709:0xd2328eee1e73697f!8m2!3d-53.797964!4d-67.6718719!15sCgtnb29nbGUgbWFwcyIDiAEBkgEQb2JzZXJ2YXRpb25fZGVjaw">Aquí</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto -->
+    
+    <!-- Footer Todavia no hace mucho solo es link-->
+    <footer id="footer" class="pb-2 pt-2">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a href="#list">Listado</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#modifylist">Modificar Persona</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#contact">Contacto</a>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
