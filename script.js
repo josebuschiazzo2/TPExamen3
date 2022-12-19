@@ -50,7 +50,7 @@ const mydata ={
     "apellido":"Buschiazzo",
     "area":"IT",
     "domicilio":"1234 Río Grande",
-    "foto":"https://www.comunicaz.es/wp-content/uploads/2013/08/La-importancia-del-empleado.jpg",
+    "foto":"https://github.com/josebuschiazzo2/TPExamen3/blob/main/Imagen/3estrellas.jpg?raw=true",
     "id":"100"
 }
 
